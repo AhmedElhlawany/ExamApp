@@ -82,10 +82,9 @@ export default function DiplomaCardsList() {
         // امنع التكرار لو فيه طلب شغال أو اللّوك مقفول
         if (isFetchingNextPage || lockRef.current) return;
 
-        lockRef.current = true; // اقفل لحد ما يبدأ الفetch
+        lockRef.current = true; 
         fetchNextPage().finally(() => {
-          // افتح القفل بعد استقرار الـtask في الماكروتاستك التالي
-          // لتفادي تكرار التريجر على نفس الإطار
+
           setTimeout(() => {
             lockRef.current = false;
           }, 0);
