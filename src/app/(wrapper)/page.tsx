@@ -22,7 +22,6 @@ export default async function Home() {
 
 
 
-  // const session = await getServerSession(authOptions);
 
   return (
         
@@ -33,23 +32,7 @@ export default async function Home() {
         <div className="mx-auto w-full py-0">
           <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <DiplomaCardsList />
-            {/* {diplomas.subjects.map(
-              (d: { _id: string; name: string; icon: string }) => {
-                const slug = slugify(d.name);
-                const href = `/diplomas/${slug}-${d._id}/exams`; 
-                return (
-                  <>
-                    
-                    <DiplomaCard
-                      key={d._id}
-                      title={d.name}
-                      img={d.icon}
-                      href={href}
-                    />
-                  </>
-                );
-              }
-            )} */}
+          
           </section>
         </div>
       </main>

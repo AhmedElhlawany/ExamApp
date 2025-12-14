@@ -49,7 +49,7 @@ export default async function ExamsPage({ params }: { params: Params }) {
         </div>
 
 
-        <p className="text-red-500">حدث خطأ أثناء تحميل الامتحانات.</p>
+        <p className="text-red-500">error while loading</p>
       </div>
     );
   }
@@ -63,7 +63,7 @@ export default async function ExamsPage({ params }: { params: Params }) {
          <HeaderBar title="Exams" />
 
       {exams.length === 0 ? (
-        <p className="text-gray-600 text-center">لا توجد امتحانات متاحة حتى الآن.</p>
+        <p className="text-gray-600 text-center">No exams found</p>
       ) : (
         <>
           <ul className="space-y-3">
